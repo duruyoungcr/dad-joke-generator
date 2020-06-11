@@ -1,0 +1,206 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.joke-box {
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  color: rgb(53, 61, 93);
+  box-shadow: 2px 2px 2px seashell;
+}
+/* loader */
+.ldio-thmerbqh769 div {
+  left: 50px;
+  top: 10px;
+  position: absolute;
+  animation: ldio-thmerbqh769 linear 1s infinite;
+  background: rgb(53, 61, 93);
+  width: 12px;
+  height: 24px;
+  border-radius: 6px / 12px;
+  transform-origin: 3px 30px;
+}
+.ldio-thmerbqh769 div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -0.9166666666666666s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -0.8333333333333334s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.75s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.6666666666666666s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.5833333333333334s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.5s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.4166666666666667s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.3333333333333333s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.25s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.16666666666666666s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.08333333333333333s;
+  background: rgb(53, 61, 93);
+}
+.ldio-thmerbqh769 div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+  background: rgb(53, 61, 93);
+}
+.loadingio-spinner-spinner-9kzugsxcnc {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+  background: antiquewhite;
+}
+.ldio-thmerbqh769 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform: translateZ(0) scale(1);
+  backface-visibility: hidden;
+  transform-origin: 0 0;
+}
+.ldio-thmerbqh769 div {
+  box-sizing: content-box;
+}
+@keyframes ldio-thmerbqh769 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* end of loader */
+.joke {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin: 40px;
+}
+.joke h4 {
+  margin-bottom: 20px;
+  font-weight: 100;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+button a {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+}
+.joke-text {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+.btn {
+  padding: 15px 10px;
+  border-radius: 8px;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  background-color: rgb(53, 61, 93);
+  color: white;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  transform: scale(0.98);
+  opacity: 0.98;
+}
+.share .btn {
+  background-color: lightblue;
+}
+@media (max-width: 475px) {
+  .buttons {
+    display: grid;
+    text-align: center;
+    grid-row-gap: 20px;
+    grid-template-columns: auto;
+    grid-column-start: auto;
+    grid-template-areas:
+      "get"
+      "tweet";
+  }
+  .mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .share {
+    grid-area: "tweet";
+    margin-bottom: 10px;
+  }
+  .new-quote {
+    grid-area: get;
+  }
+  .joke-text {
+    width: 100%;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .joke-box {
+    padding: 10px 20px;
+  }
+  .joke {
+    margin: 30px 5px;
+  }
+}
+@media (min-width: 650px) {
+  .joke-box {
+    width: 60vw;
+  }
+}
+@media (min-width: 1000px) {
+  .joke-box {
+    width: 40vw;
+  }
+}
